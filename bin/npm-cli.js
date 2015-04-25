@@ -45,6 +45,7 @@ else conf.usage = true
 
 if (conf.version) {
   console.log(npm.version)
+  console.info('haha my version');
   return
 }
 
