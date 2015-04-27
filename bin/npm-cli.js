@@ -2,6 +2,7 @@
 ;(function () { // wrapper in case we're in module_context mode
 
 // windows: running "npm blah" in this folder will invoke WSH, not node.
+// 不能在WScript环境中调用
 if (typeof WScript !== "undefined") {
   WScript.echo("npm does not work when run\n"
               +"with the Windows Scripting Host\n\n"
